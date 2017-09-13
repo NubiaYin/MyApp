@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6A6E04C12E379015359F883A /* Pods_MyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E530FC4E273A0258EC301432 /* Pods_MyApp.framework */; };
+		8F6F33661F62971F00E545E1 /* MABaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F33651F62971F00E545E1 /* MABaseViewController.swift */; };
+		8F6F33691F62974300E545E1 /* MANavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F33681F62974300E545E1 /* MANavigationBar.swift */; };
+		8F6F336B1F62A42E00E545E1 /* MAFontColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F336A1F62A42E00E545E1 /* MAFontColorManager.swift */; };
+		8F7FA1F61F67E230002C2DCF /* MANetowrkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FA1F51F67E230002C2DCF /* MANetowrkEngine.swift */; };
 		8F87DE671F61311E004B12DA /* MyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87DE661F61311E004B12DA /* MyAppTests.swift */; };
 		8F87DE7C1F6131F6004B12DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87DE721F6131F6004B12DA /* ViewController.swift */; };
 		8F87DE7D1F6131F6004B12DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87DE741F6131F6004B12DA /* AppDelegate.swift */; };
 		8F87DE801F6131F6004B12DA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F87DE791F6131F6004B12DA /* Info.plist */; };
 		8F87DE811F6131F6004B12DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F87DE7B1F6131F6004B12DA /* Assets.xcassets */; };
+		8FA5F4051F69166400B35EBA /* DisplayConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA5F4041F69166400B35EBA /* DisplayConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,10 @@
 
 /* Begin PBXFileReference section */
 		03960F24FBD325615DCB8970 /* Pods-MyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp/Pods-MyApp.release.xcconfig"; sourceTree = "<group>"; };
+		8F6F33651F62971F00E545E1 /* MABaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MABaseViewController.swift; sourceTree = "<group>"; };
+		8F6F33681F62974300E545E1 /* MANavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MANavigationBar.swift; sourceTree = "<group>"; };
+		8F6F336A1F62A42E00E545E1 /* MAFontColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAFontColorManager.swift; sourceTree = "<group>"; };
+		8F7FA1F51F67E230002C2DCF /* MANetowrkEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MANetowrkEngine.swift; sourceTree = "<group>"; };
 		8F87DE4E1F61311E004B12DA /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F87DE621F61311E004B12DA /* MyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F87DE661F61311E004B12DA /* MyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppTests.swift; sourceTree = "<group>"; };
@@ -35,6 +44,7 @@
 		8F87DE741F6131F6004B12DA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F87DE791F6131F6004B12DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F87DE7B1F6131F6004B12DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FA5F4041F69166400B35EBA /* DisplayConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayConfig.swift; sourceTree = "<group>"; };
 		E530FC4E273A0258EC301432 /* Pods_MyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7983F53312C1E4983594D6A /* Pods-MyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyApp/Pods-MyApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +68,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6F335D1F6294B700E545E1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8F6F335E1F6294B700E545E1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F33631F62971F00E545E1 /* Base */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8F6F335F1F6294B700E545E1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F336A1F62A42E00E545E1 /* MAFontColorManager.swift */,
+				8F7FA1F51F67E230002C2DCF /* MANetowrkEngine.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8F6F33631F62971F00E545E1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F33671F62972D00E545E1 /* Views */,
+				8F6F33641F62971F00E545E1 /* ViewContollers */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8F6F33641F62971F00E545E1 /* ViewContollers */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F33651F62971F00E545E1 /* MABaseViewController.swift */,
+			);
+			path = ViewContollers;
+			sourceTree = "<group>";
+		};
+		8F6F33671F62972D00E545E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F33681F62974300E545E1 /* MANavigationBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8F87DE451F61311E004B12DA = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +159,10 @@
 		8F87DE711F6131F6004B12DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8FA5F4031F69164D00B35EBA /* Config */,
+				8F6F335D1F6294B700E545E1 /* Common */,
+				8F6F335E1F6294B700E545E1 /* Modules */,
+				8F6F335F1F6294B700E545E1 /* Tools */,
 				8F87DE721F6131F6004B12DA /* ViewController.swift */,
 			);
 			path = Classes;
@@ -120,6 +183,14 @@
 				8F87DE7B1F6131F6004B12DA /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8FA5F4031F69164D00B35EBA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8FA5F4041F69166400B35EBA /* DisplayConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		9849C4A02E77F931D8BD2861 /* Pods */ = {
@@ -286,6 +357,7 @@
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
@@ -295,6 +367,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
@@ -310,8 +383,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6F336B1F62A42E00E545E1 /* MAFontColorManager.swift in Sources */,
 				8F87DE7D1F6131F6004B12DA /* AppDelegate.swift in Sources */,
+				8FA5F4051F69166400B35EBA /* DisplayConfig.swift in Sources */,
 				8F87DE7C1F6131F6004B12DA /* ViewController.swift in Sources */,
+				8F6F33661F62971F00E545E1 /* MABaseViewController.swift in Sources */,
+				8F7FA1F61F67E230002C2DCF /* MANetowrkEngine.swift in Sources */,
+				8F6F33691F62974300E545E1 /* MANavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
